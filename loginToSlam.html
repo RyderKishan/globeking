@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slam Login</title>
+	<!-- Page styles -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mui.css">
+	<script src="https://cdn.muicss.com/mui-0.9.38/js/mui.min.js"></script>
+</head>
+
+<body>
+	<div>
+		<p class="titleSlam">Let`s open your Slam Book</p>
+		<form class="mui-form" id="slamForm" style="margin-top: 16px">
+			<legend>Login Details</legend>
+			<div class="mui-textfield mui-textfield--float-label">
+				<input type="text" id="slamUserName">
+				<label>User Name</label>
+			</div>
+			<div class="mui-textfield mui-textfield--float-label">
+				<input type="password" id="slamPassword">
+				<label>Password</label>
+			</div>
+			<button type="button" onclick="loginToSlam()" class="mui-btn mui-btn--raised" style="width: 100%">
+				Login
+			</button>
+		</form>
+		<script src="slambook.js"></script>
+</body>
+
+</html>
