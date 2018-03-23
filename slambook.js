@@ -15,8 +15,8 @@ function submitForm() {
       let response = JSON.parse(this.responseText);
       if (response.success) {
         alert(response.message);
-        console.log("Success");
-        window.reload();
+        console.log(response.message);
+        location.reload();
       }
     }
   };
@@ -28,7 +28,7 @@ function submitForm() {
 function loginToSlam() {
   var userName = document.getElementById("slamUserName").value;
   var password = document.getElementById("slamPassword").value;
-  alert("USER : " + userName + " PASS : " + password);
+  alert("USER : " + userName);
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
